@@ -3422,7 +3422,7 @@ define("main", ["require", "exports", "gui", "lib/clipboard"], function (require
                 reader.readAsDataURL(files[0]);
             }
         });
-        gui_2.loadExample("imgSmall");
+        gui_2.loadExample("imgTrivial");
         $("#btnProcess").click(function () {
             return __awaiter(this, void 0, void 0, function* () {
                 try {
@@ -3446,7 +3446,7 @@ define("main", ["require", "exports", "gui", "lib/clipboard"], function (require
             gui_2.downloadPalettePng();
         });
         $("#lnkTrivial").click(() => { gui_2.loadExample("imgTrivial"); return false; });
-        $("#lnkSmall").click(() => { gui_2.loadExample("imgSmall"); return false; });
+//         $("#lnkSmall").click(() => { gui_2.loadExample("imgSmall"); return false; });
         $("#lnkMedium").click(() => { gui_2.loadExample("imgMedium"); return false; });
     });
 });
