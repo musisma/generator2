@@ -59,7 +59,7 @@
                             <div class="col s3" style="margin-top: 34px;">
                                 <label>
                                     <input id="chkResizeImage" type="checkbox" checked="checked" />
-                                    <span>Resize image larger than
+                                    <span>Resmi yeniden boyutlandır
                                         <i class="material-icons tooltipped"
                                             data-tooltip="If checked and the input image is larger than the given dimensions then it will be resized to fit but will maintain its ratio.">info</i>
                                     </span>
@@ -88,7 +88,7 @@
                             <div class="input-field col s2">
                                 <input id="txtClusterPrecision" type="number" value="1" min="1" step="0.05"
                                     class="validate">
-                                <label for="txtClusterPrecision">Cluster precision
+                                <label for="txtClusterPrecision">Küme hassasiyeti
                                     <i class="material-icons tooltipped"
                                         data-tooltip="The threshold delta distance of the k-means clustering to reach before stopping. Having a bigger value will speed up the clustering but may yield suboptimal clusters.">info</i>
                                 </label>
@@ -97,7 +97,7 @@
                             <div class="input-field col s2">
                                 <input id="txtRandomSeed" type="number" value="0" min="0" step="1"
                                     class="validate">
-                                <label for="txtRandomSeed">Random seed
+                                <label for="txtRandomSeed">Rastgele seçici
                                     <i class="material-icons tooltipped"
                                         data-tooltip="The seed to use for the random number generator to choose the initial centroids for k-means clusering. Using the same seed ensures you will get the same result every time.">info</i>
                                 </label>
@@ -108,7 +108,7 @@
                         <div class="row">
 
                             <div class="col s3">
-                                <label>Clustering color space
+                                <label>Küme renk uzayı
                                     <i class="material-icons tooltipped"
                                         data-tooltip="The color space to apply clustering in">info</i>
                                 </label>
@@ -133,7 +133,7 @@
                             </div>
 
                             <div class="col s12">
-                                <label for="txtKMeansColorRestrictions">Restrict clustering colors
+                                <label for="txtKMeansColorRestrictions">Kümeleme renklerini kısıtla
                                     <i class="material-icons tooltipped"
                                         data-tooltip="Specify which colors should be used, one per line in 'r,g,b' format. Use // as comment. If no colors are specified no restrictions are applied. Useful if you only have a few colors of paint on hand.">info</i>
                                 </label>
@@ -149,7 +149,7 @@
                             <div class="input-field col s4">
                                 <input id="txtNarrowPixelStripCleanupRuns" type="number" value="3" min="0"
                                     class="validate">
-                                <label for="txtNarrowPixelStripCleanupRuns">Number of runs for narrow pixel cleanup
+                                <label for="txtNarrowPixelStripCleanupRuns">Dar piksel temizleme için çalıştırma sayısı
                                     <i class="material-icons tooltipped"
                                         data-tooltip="Narrow pixel cleanup removes strips of single pixel rows, which would make some facets have some borders segments that are way too narrow to be useful. The small facet removal can introduce new narrow pixel strips, so this is repeated in a few iterative runs.">info</i>
                                 </label>
@@ -157,7 +157,7 @@
                             <div class="input-field col s4">
                                 <input id="txtRemoveFacetsSmallerThan" type="number" value="20" min="1"
                                     class="validate">
-                                <label for="txtRemoveFacetsSmallerThan">Remove small facets smaller than (pixels)
+                                <label for="txtRemoveFacetsSmallerThan">Şundan daha küçük olan küçük yönleri kaldırın (pixels)
                                     <i class="material-icons tooltipped"
                                         data-tooltip="Removes any facets that are smaller than the given amount of pixels. Lowering the value will create more detailed results but might be much harder to actually paint due to their size.">info</i>
                                 </label>
@@ -165,7 +165,7 @@
                             <div class="input-field col s4">
                                 <input id="txtMaximumNumberOfFacets" type="number" value="100000" min="1"
                                     class="validate">
-                                <label for="txtMaximumNumberOfFacets">Maximum number of facets
+                                <label for="txtMaximumNumberOfFacets">Maksimum yön sayısı
                                     <i class="material-icons tooltipped"
                                         data-tooltip="If there are more facets than the given maximum number, keep removing the smallest facets until the limit is reached">info</i>
                                 </label>
@@ -175,7 +175,7 @@
                             <div class="input-field col s6">
                                 <div class="row">
                                     <div class="col s4">
-                                        <label>Small facet removal order
+                                        <label>Küçük yön kaldırma emri
                                             <i class="material-icons tooltipped"
                                                 data-tooltip="Largest to smallest will prevent boundaries from warping the shapes because the smaller facets act as border anchorpoints but can be considerably slower">info</i>
                                         </label>
@@ -184,14 +184,14 @@
                                         <label>
                                             <input id="optFacetRemovalLargestToSmallest" name="smallfacetremovalorder"
                                                 type="radio" checked />
-                                            <span>Largest to smallest</span>
+                                            <span>Büyükten küçüğe</span>
                                         </label>
                                     </div>
                                     <div class="col s4">
                                         <label>
                                             <input id="optFacetRemovalSmallestToLargest" name="smallfacetremovalorder"
                                                 type="radio" />
-                                            <span>Smallest to largest</span>
+                                            <span>Küçükten büyüğe</span>
                                         </label>
                                     </div>
                                 </div>
@@ -204,8 +204,7 @@
                             <div class="input-field col s5">
                                 <input id="txtNrOfTimesToHalveBorderSegments" type="number" value="2" min="0"
                                     class="validate">
-                                <label for="txtNrOfTimesToHalveBorderSegments">Amount of times to halve border segment
-                                    complexity)
+                                <label for="txtNrOfTimesToHalveBorderSegments">Sınır segmentini düşürün
                                     <i class="material-icons tooltipped"
                                         data-tooltip="Reducing the amount of points in a border segment (using haar wavelet reduction) will smooth out the quadratic curve more but at a loss of detail. <br/>A segment (shared border with a facet) will always retain its start and end point.">info</i>
                                 </label>
@@ -217,7 +216,7 @@
             </div>
 
             <div class="col s12">
-                <a class="waves-effect waves-light btn" id="btnProcess">Process image</a>
+                <a class="waves-effect waves-light btn" id="btnProcess">Şaheseri Gör</a>
             </div>
         </div>
 
@@ -225,7 +224,7 @@
 
             <div class="col s2">
                 <div class="status kMeans">
-                    K-means clustering
+                    Resim işleniyor
                     <div class="progress">
                         <div id="statusKMeans" class="determinate" style="width: 0%"></div>
                     </div>
@@ -233,7 +232,7 @@
             </div>
             <div class="col s2">
                 <div class="status facetBuilding">
-                    Facet building
+                    Yönler oluşturuluyor
                     <div class="progress">
                         <div id="statusFacetBuilding" class="determinate" style="width: 0%"></div>
                     </div>
@@ -241,7 +240,7 @@
             </div>
             <div class="col s2">
                 <div class="status facetReduction">
-                    Small facet pruning
+                    Küçük yönler temizleniyor
                     <div class="progress">
                         <div id="statusFacetReduction" class="determinate" style="width: 0%"></div>
                     </div>
@@ -249,7 +248,7 @@
             </div>
             <div class="col s2">
                 <div class="status facetBorderPath">
-                    Border detection
+                    Sınırlar tespit ediliyor
                     <div class="progress">
                         <div id="statusFacetBorderPath" class="determinate" style="width: 0%"></div>
                     </div>
@@ -265,7 +264,7 @@
             </div>
             <div class="col s2">
                 <div class="status facetLabelPlacement">
-                    Etiket yerleşimi
+                    Sayı yerleşimi
                     <div class="progress">
                         <div id="statusFacetLabelPlacement" class="determinate" style="width: 0%"></div>
                     </div>
@@ -275,7 +274,7 @@
         <div class="row">
             <div class="col s2">
                 <div class="status SVGGenerate">
-                    SVG generation
+                    SVG oluşturuluyor
                     <div class="progress">
                         <div id="statusSVGGenerate" class="determinate" style="width: 0%"></div>
                     </div>
@@ -308,6 +307,11 @@
                         <a href="#log-pane">Kayıt</a>
                     </li>
                 </ul>
+            </div>
+            <div>
+                <span>2023 © yenibihobi.com
+                </span>
+                
             </div>
             <div id="kmeans-pane" class="col s12">
                 <canvas id="cKMeans"></canvas>
@@ -404,7 +408,11 @@
                     <div class="col s3">
                         <a class="waves-effect waves-light btn" id="btnDownloadPalettePNG">Renk paletini indir</a>
                     </div>
+                    
+                    
                 </div>
+                
+                
             </div>
 
             <div id="log-pane" class="col s12">
