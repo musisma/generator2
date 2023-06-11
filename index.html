@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>by number generator</title>
+    <title>Yenibihobi pbn</title>
     <link rel="stylesheet" href="styles/lib/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--     <script> 
@@ -15,8 +15,15 @@
 
 <body>
     <div style="text-align:center;">
+        <div class="image-container">
+            <img src="https://yenibihobi.com/wp-content/uploads/2023/04/cropped-512.png.webp">
+
+        </div>
         <div class="row">
-            <h2> Sayılardan Resim Oluşturma </h2>
+            <h2> Sayılarla Boyama Oluşturucu </h2>
+            <span>Sipariş öncesinde güçlü yapay zeka ile resminizin boyamaya dönüştürülmüş yaklaşık halini görün.
+            </span>
+            <br />
             <span>Kopyaladığınız resmi (ctrl+v) ile yapıştırın (yada dosya seçin <input id="file" type="file"
                     accept="image/x-png,image/gif,image/jpeg"></input>). Büyük dosyalar uzun sürelerde işlenir
                 .</span>
@@ -71,7 +78,7 @@
                     <li class="collection-item">
                         <div class="row">
                             <div class="input-field col s2">
-                                <input id="txtNrOfClusters" type="number" value="16" min="1" class="validate">
+                                <input id="txtNrOfClusters" type="number" value="5" min="1" max="5" class="validate">
                                 <label for="txtNrOfClusters">Renk sayısı(max:5) 
                                     <i class="material-icons tooltipped"
                                         data-tooltip="The number of colors to quantize the image to">info</i>
